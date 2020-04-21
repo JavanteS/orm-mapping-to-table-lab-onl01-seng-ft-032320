@@ -33,6 +33,7 @@ class Student
   
   def save 
     sql = "INSERT INTO students (name, grade) values (?, ?)"
+    
     @id = 
   end 
   
