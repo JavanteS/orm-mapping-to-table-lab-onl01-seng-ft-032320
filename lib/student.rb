@@ -24,13 +24,8 @@ class Student
   
   def self.drop_table 
     #DROP TABLE
-     sql =  <<-SQL 
-      DROP TABLE IF EXISTS students (
-        id INTEGER PRIMARY KEY, 
-        name TEXT, 
-        grade NUMERIC
-        )
-        SQL
+     sql =  DROP TABLE IF EXISTS students 
+       
         
     DB[:conn].execute(sql)
     
