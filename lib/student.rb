@@ -32,7 +32,7 @@ class Student
   end 
   
   def save 
-    sql = INSERT INTO students ()
+    sql = INSERT INTO students (name, grade) values (?, ?)
   end 
   
   def self.create(hash)
