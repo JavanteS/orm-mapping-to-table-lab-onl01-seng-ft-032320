@@ -41,7 +41,8 @@ class Student
   
   def self.create(hash)
     student = Student.new(@name, @grade)
-    
+    student.save
+    student
   end
   
 end
