@@ -25,6 +25,7 @@ class Student
   def self.drop_table 
     #DROP TABLE
     
+    
   end 
   
   def save 
