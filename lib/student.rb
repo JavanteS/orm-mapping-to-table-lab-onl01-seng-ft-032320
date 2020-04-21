@@ -33,7 +33,7 @@ class Student
   
   def save 
     sql = "INSERT INTO students (name, grade) values (?, ?)"
-    
+    DB[:conn].execute(sql, self.name, self.grade)
     @id = 
   end 
   
